@@ -1,2 +1,21 @@
-# trabalhoFaculdade
-Trabalho em grupo - Disciplina de desenvolvimento web 
+# Título do projeto.
+**(Frase de efeito)** 
+
+## Descrição:
+(Explicação do projeto)
+
+<ul>
+<li> Funcionalidade: </li>
+<li> Definição: </li>
+</ul>
+
+### Colaboradores:
+
+<ol>
+  <li>João Pedro de O. Martins</li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+<ol>
+

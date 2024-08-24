@@ -12,7 +12,7 @@
 ### Colaboradores:
 
 <ol>
-  <li>João Pedro de O. Martins</li>
+  <li>João Pedro de O. Martins.</li>
   <li>Agnaldo Machado da Silva</li>
   <li></li>
   <li></li>

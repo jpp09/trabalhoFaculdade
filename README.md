@@ -14,7 +14,7 @@
 <ol>
   <li>João Pedro de O. Martins.</li>
   <li>Agnaldo Machado da Silva</li>
-  <li></li>
+  <li>Kauã Lenon Barros dos Santos</li>
   <li></li>
   <li></li>
 <ol>

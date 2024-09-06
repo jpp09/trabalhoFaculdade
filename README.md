@@ -1,14 +1,9 @@
-# Título do projeto.
+# Entreterimentos caseiros.
 **(Este site sera voltado as pessoas caseiras, que preferem mas ficar em casa vendo filmes ou series do que sair para a vida noturno.
 )** 
 
 ## Descrição:
-
-
-<ul>
-<li> Funcionalidade: </li>
-<li> Definição: </li>
-</ul>
+Site voltado para mostrar uma diversidade de filmes, séries e animes por categoria.
 
 ### Colaboradores:
 

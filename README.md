@@ -16,6 +16,6 @@
   <li>Agnaldo Machado da Silva</li>
   <li>Kauã Lenon Barros dos Santos</li>
   <li>Eduardo portes de almeida</li>
-  <li></li>
+  <li>Fabricio dos Santos</li>
 <ol>
 

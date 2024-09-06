@@ -1,4 +1,4 @@
-# Entreterimentos caseiros.
+# Entretenimentos caseiros.
 **Este site sera voltado as pessoas caseiras, que preferem mas ficar em casa vendo filmes ou series do que sair para a vida noturno.** 
 
 ## Descrição:

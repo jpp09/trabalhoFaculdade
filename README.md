@@ -1,6 +1,5 @@
 # Entreterimentos caseiros.
-**Este site sera voltado as pessoas caseiras, que preferem mas ficar em casa vendo filmes ou series do que sair para a vida noturno.
-** 
+**Este site sera voltado as pessoas caseiras, que preferem mas ficar em casa vendo filmes ou series do que sair para a vida noturno.** 
 
 ## Descrição:
 Site voltado para mostrar uma diversidade de filmes, séries e animes por categoria.

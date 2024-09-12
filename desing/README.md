@@ -1,4 +1,4 @@
 ### Entretenimento Caseiros (desing)
-<hr>
+<hr><br>
 **Arquivo criado para realizar a descrição do site.**
 

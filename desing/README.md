@@ -41,8 +41,8 @@
     <ul>
       <li>Página com vários filmes/séries/Animes separados por categorias</li>
     </ul>
-  <ul>
-    Página - Comunidade
+  <ul><br>
+    <li>Página - Comunidade</li>
       <ul>
         <li>Página dedicada para comentários sobre filmes/séries/animes</li>
       </ul>

@@ -41,13 +41,13 @@
     <ul>
       <li>Página com vários filmes/séries/Animes separados por categorias</li>
     </ul>
-  <ul><br>
-    <li>Página - Comunidade</li>
-      <ul>
-        <li>Página dedicada para comentários sobre filmes/séries/animes</li>
-      </ul>
+  <ul>
   </ul>
   <br>
+  <li>Página - Comunidade</li>
+  <ul>
+    <li>Página dedicada para comentários sobre filmes/séries/animes</li>
+  </ul><br>
   <li>Página - Seleção detalhada de cada filme/série/Anime escolhido </li><br>
     <ul>
       <li>Imagem/flder - Funcionalidade: Imagem demonstratia do filme/série/anime escolhido</li>

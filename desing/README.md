@@ -37,7 +37,16 @@
       <li>Campo confirmação de senha - FUncionalidade: Verificar se as duas outras senha são semelhantes</li>
       <li>Input's de preferência - Funcionalidade: Adicionar a preferência do usuário ao banco de dados</li>
     </ul><br>
-  <li>Página Home - Filmes / Séries/ Animes/Categorias</li>
+  <li>Página Home - Filmes / Séries/ Animes</li>
+    <ul>
+      <li>Página com vários filmes/séries/Animes separados por categorias</li>
+    </ul>
+  <ul>
+    Página - Comunidade
+      <ul>
+        <li>Página dedicada para comentários sobre filmes/séries/animes</li>
+      </ul>
+  </ul>
   <br>
   <li>Página - Seleção detalhada de cada filme/série/Anime escolhido </li><br>
     <ul>

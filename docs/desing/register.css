@@ -1,3 +1,23 @@
 body{
     background-color: rgb(0,0,0,0.63);
 }
+
+#form_section_register{
+    border-radius: 25px;
+    width: 250px;
+    height: 300px;
+}
+
+#id_section_register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#content_register{
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

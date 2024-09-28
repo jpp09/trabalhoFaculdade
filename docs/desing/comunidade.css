@@ -5,14 +5,14 @@ body{
 
 
 
-#form_section{
+#form_section_cm{
     align-items: center;
     border-radius: 25px;
     width: 250px;
     height: 350px;
 }
 
-div{
+#form_div_cm{
     display: flex;
     flex-direction: column;
     align-items: center;

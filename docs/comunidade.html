@@ -4,23 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comunidade - Entretenimento caseiros</title>
+    <link rel="stylesheet" href="desing/comunidade.css">
 </head>
 <body>
-    <h1>Comunidade - Entretenimentos caseiros</h1>
-    <a href="index.html">voltar</a><br>
-    <form action="https://webhook.site/3e8c5029-a599-40f4-bc09-6733d49f6928" target="_blank">
-        <label for="input_title">Titulo:</label>
-        <input type="text" name="input_title" id="input_title" placeholder="Digite o título do post"> <br>
-        <label for="input_spoiler">Spoiler:</label><br>
-        <input type="radio" name="input_spoiler" id="input_yes" value="sim">
-        <label for="input_yes">Sim</label>
-        <input type="radio" name="input_spoiler" id="input_no" value="não">
-        <label for="input_no">Não</label><br>
-        <label for="input_description">Descrição:</label><br>
-        <textarea name="input_description" id="input_description" placeholder="Escreve a descrição do post" style="width: 400px; height: 200px;"></textarea><br>
-        <button type="submit">Enviar Post</button>
-    </form>
-
+    <h1 id="title">Comunidade - Entretenimentos caseiros</h1>
+    <a href="index.html" id="endPoint">voltar</a><br>
+    <hr>
+    <div>
+        <fieldset id="form_section">
+            <form action="https://webhook.site/3e8c5029-a599-40f4-bc09-6733d49f6928" target="_blank">
+                <label for="input_title">Titulo:</label>
+                <input type="text" name="input_title" id="input_title" placeholder="Digite o título do post"> <br>
+                <label for="input_spoiler">Spoiler:</label><br>
+                <input type="radio" name="input_spoiler" id="input_yes" value="sim">
+                <label for="input_yes">Sim</label>
+                <input type="radio" name="input_spoiler" id="input_no" value="não">
+                <label for="input_no">Não</label><br>
+                <label for="input_description">Descrição:</label><br>
+                <textarea name="input_description" id="input_description" placeholder="Escreve a descrição do post" style="width: 400px; height: 200px;"></textarea><br>
+                <button type="submit">Enviar Post</button>
+            </form>
+        </fieldset>
+    </div>
 
 
 </body>

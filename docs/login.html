@@ -12,7 +12,7 @@
     <header id="cabeçalho">
         <div id="conteudo_menu">
             <div id="logo">
-                <img src="desing/EC__2_-removebg-preview.png" alt="EC com fundo preto e letras em vermelho" id="img_logo">
+                <a href="home.html"><img src="desing/EC__2_-removebg-preview.png" alt="EC com fundo preto e letras em vermelho" id="img_logo"></a>
             </div>
             <div id="seção_de_rotas">
                 <div id="pesquisa">
@@ -31,15 +31,23 @@
             </div>
         </div>
     </header>
-    <!-- Seção de conteúdo da página-->
-    <section>
+    <!-- Conteudo principal da página de login-->
+    <section id="conteudo_principal_login">
+        <!--Menu para celulares-->
+        <div id="paginas">
+            <a href="filmes.html" id="filmes">Filmes</a>
+            <a href="series.html" id="series">Séries</a>
+            <a href="anime.html" id="anime">Animes</a>
+            <a href="comunidade.html" id="comunidade">Comunidade</a>
+        </div>
+        <!--Formulário para realizar login-->
         <form action="https://webhook.site/3e8c5029-a599-40f4-bc09-6733d49f6928" target="_blank">
             <div id="div_section_login">
                 <fieldset id="form_section_login">
                     <div id="content_login">
                         <label for="input_email">Email:</label>
                         <br/>
-                        <input placeholder="Digite seu Email..." id="input_email" type="email"name="input_email"><br><br>
+                        <input placeholder="Digite seu Email..." id="input_email" type="email" name="input_email"><br><br>
                         <label for="input_senha">Senha:</label><br>
                         <input id="input_senha" type= "password" name="input_senha" placeholder="Digite sua senha..."required><br><br>
                         <button type="submit">Login</button>

@@ -1,19 +1,31 @@
-body{
-    background-color: rgb(0,0,0,0.63);
-    
-}
-
-
-
 #form_section_cm{
     align-items: center;
     border-radius: 25px;
     width: 250px;
     height: 350px;
+    margin: 50px;
 }
 
 #form_div_cm{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#input_description{
+    width: 400px; height: 200px;
+}
+
+#conteudo_principal_comunidade{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width:425px){
+    #input_description{
+        width: 250px; 
+        height: 150px;
+    }
+    
 }

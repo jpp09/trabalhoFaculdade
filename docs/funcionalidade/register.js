@@ -4,10 +4,10 @@ bt = document.querySelector('button').addEventListener('click',registro)
 
 function registro(){
     if(senha.value === confirmarSenha.value){
-        alert('Cadastro realizado')
+        alert('Cadastro realizado com sucesso!!')
         console.log(senha.value,confirmarSenha.value)
     }else{
-        alert('Cadastro errado ')
+        alert('As senhas não coincidem. Por favor, tente novamente.')
         console.log(senha.value,confirmarSenha.value)
     }
 }

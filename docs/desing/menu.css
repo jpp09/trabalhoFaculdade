@@ -47,3 +47,70 @@ body{
     display: flex;
     gap: 1rem;
 }
+
+#login{
+    height: 30px;
+}
+
+#register{
+    height: 30px;
+}
+
+/*Configurando a responsividade do menu para celular*/
+@media (max-width: 425px){
+    /*Ajustando o tamanho da logo*/
+    #img_logo{
+        width: 75px;
+        height: 75px;
+    }
+
+    /*Sumindo com o display de pesquisa*/
+
+    /*Arruamando a quantidade de colunas no grid area*/
+    #conteudo_menu{
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr;
+        grid-template-areas: 
+        "img_logo seção_de_acesso";
+        align-items: center;
+        justify-items: end;
+        
+        
+    }
+
+    #cabeçalho{
+        background-color: black;
+    }
+
+    #logo{
+        grid-area: img_logo;
+    }
+    
+    #seção_de_acesso{
+        display: none;
+        grid-area: botao;
+        display: flex;
+        grid-area: seção_de_acesso;
+        gap: 1rem;
+
+    }
+    
+    #seção_de_rotas{
+        display: none;
+    }
+
+}
+
+@media (min-width: 425px){
+    #paginas{
+        display: none;
+    }
+}
+
+@media (max-width: 425px){
+    #paginas{
+        display: flex;
+        gap: 1rem;
+        margin: 20px
+    }
+}

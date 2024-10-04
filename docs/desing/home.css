@@ -1,0 +1,15 @@
+/*Manipulando o conteúdo do site*/
+#conteudo_principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Arrumando o banner ggeral de noticias*/
+#noticias{
+    margin: 50px;
+    border: 1px solid black;
+    border-radius: 25px;
+    height: 250px;
+    width: 1000px;
+}

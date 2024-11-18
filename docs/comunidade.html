@@ -6,6 +6,7 @@
     <title>Comunidade - Entretenimento caseiros</title>
     <link rel="stylesheet" href="desing/comunidade.css">
     <link rel="stylesheet" href="desing/menu.css">
+    <script src="/docs/funcionalidade/add.js" defer></script>
 </head>
 <body>
     <!--Remover essa página adicionar um parte para adicionar um comentário em cada aba-->>
@@ -44,18 +45,27 @@
         <!--Forms para registrar a comunidade-->
         <div id="form_div_cm">
             <fieldset id="form_section_cm">
-                <form action="https://webhook.site/3e8c5029-a599-40f4-bc09-6733d49f6928" target="_blank">
+                <form id="form_add">
+                    <label for="name_filme">Nome do título:</label>
+                    <input type="text" name="name_filme" placeholder="Digite o nome do filme!!!"> <br><br>
                     <label for="input_title" id="input_t">Titulo:</label>
-                    <input type="text" name="input_title" id="input_title" placeholder="Digite o título do post">
-                     <br>
+                    <input type="text" name="input_title" id="input_title" placeholder="Digite o título do comentário">
+                     <br><br>
                     <label>Spoiler:</label><br>
                     <input type="radio" name="input_spoiler" id="input_yes" value="sim">
                     <label for="input_yes">Sim</label>
                     <input type="radio" name="input_spoiler" id="input_no" value="não">
-                    <label for="input_no">Não</label><br>
+                    <label for="input_no">Não</label><br><br>
+                    <label for="caegoria">Selecione a categoria: </label>
+                    <select name="categoria" id="categoria">
+                        <option value="filme">Filmes</option>
+                        <option value="serie">Série</option>
+                        <option value="anime">Anime</option>
+                    </select>
+                    <br><br>
                     <label for="input_description">Descrição:</label><br>
-                    <textarea name="input_description" id="input_description" placeholder="Escreve a descrição do post" ></textarea><br>
-                    <button type="submit">Enviar Post</button>
+                    <textarea name="input_description" id="input_description" placeholder="Escreve a descrição do post" ></textarea><br><br>
+                    <button type="submit" id="addPost">Enviar Post</button>
                 </form>
             </fieldset>
         </div>

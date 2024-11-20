@@ -26,7 +26,7 @@
     border-radius: 25px;
 }
 
-@media(max-width:1980px){
+@media(max-width:1900px){
     #noticias{
         margin: 50px;
         display: grid;

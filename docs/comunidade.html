@@ -9,7 +9,7 @@
     <script src="/docs/funcionalidade/add.js" defer></script>
 </head>
 <body>
-    <!--Remover essa página adicionar um parte para adicionar um comentário em cada aba-->>
+    <!--Remover essa página adicionar um parte para adicionar um comentário em cada aba-->
     <!--Menu da página da comunidade-->
     <header id="cabeçalho">
         <div id="conteudo_menu">
@@ -45,17 +45,21 @@
         <!--Forms para registrar a comunidade-->
         <div id="form_div_cm">
             <fieldset id="form_section_cm">
-                <form id="form_add" action="https://trabalhofaculdadebackend.onrender.com/" method="post">
-                    <label for="nome_filme">Nome do título:</label>
-                    <input type="text" name="film" placeholder="Digite o nome do filme!!!" id="nome_filme"> <br><br>
-                    <label for="input_title" id="input_t">Titulo:</label>
-                    <input type="text" name="input_title" id="input_title" placeholder="Digite o título do comentário">
-                     <br><br>
+                <form id="form_add">
+
+                    <label for="input_title" id="input_title">Titulo:</label>
+                    <input type="text" name="input_title" id="input_title" placeholder="Digite o título do comentário"><br><br>
+
+                    <label for="filme">Nome do filme:</label>
+                    <input type="text" name="filme" id="nome_filme" placeholder="Digite o nome do título"> <br><br>
+
                     <label>Spoiler:</label><br>
                     <input type="radio" name="input_spoiler" id="input_yes" value="sim">
                     <label for="input_yes">Sim</label>
                     <input type="radio" name="input_spoiler" id="input_no" value="não">
                     <label for="input_no">Não</label><br><br>
+
+
                     <label for="caegoria">Selecione a categoria: </label>
                     <select name="categoria" id="categoria">
                         <option value="filme">Filmes</option>
@@ -63,8 +67,10 @@
                         <option value="anime">Anime</option>
                     </select>
                     <br><br>
+
+
                     <label for="input_description">Descrição:</label><br>
-                    <textarea name="input_description" id="input_description" placeholder="Escreve a descrição do post" ></textarea><br><br>
+                    <textarea name="input_description" id="input_description" placeholder="Escreve a descrição do post" name="description"></textarea><br><br>
                     <button type="submit" id="addPost">Enviar Post</button>
                 </form>
             </fieldset>

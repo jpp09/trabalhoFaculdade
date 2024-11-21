@@ -1,4 +1,4 @@
-const url = 'https://api.themoviedb.org/3/trending/movie/day?language=pt-br';
+const url = 'https://api.themoviedb.org/3/trending/movie/day?language=en-US';
 const options = {
   method: 'GET',
   headers: {

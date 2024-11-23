@@ -4,7 +4,6 @@ const pegarConteudo = fetch(url,{
   headers: {
     'Content-Type': 'application/json',
   },
-  method: 'get'
 })
 .then(res => res.json())
 .then(json => json.results.forEach(element => criar(element.overview,element.poster_path)))

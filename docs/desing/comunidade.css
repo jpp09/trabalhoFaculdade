@@ -10,6 +10,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    grid-area: form;
+    max-height: 500px;
 }
 
 #input_description{
@@ -17,11 +19,24 @@
 }
 
 #conteudo_principal_comunidade{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-areas: 'form coment'
+    
+    
 }
 
+#section_coment{
+    margin: 100px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 100px;
+    grid-area: coment;
+
+}
+#tstes{
+    grid-area: teste;
+
+}
 @media(max-width:425px){
     #input_description{
         width: 250px; 
@@ -29,3 +44,4 @@
     }
     
 }
+

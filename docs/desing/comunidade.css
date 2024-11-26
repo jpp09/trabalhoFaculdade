@@ -33,10 +33,7 @@
     grid-area: coment;
 
 }
-#tstes{
-    grid-area: teste;
 
-}
 @media(max-width:425px){
     #input_description{
         width: 250px; 

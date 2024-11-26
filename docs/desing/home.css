@@ -1,3 +1,4 @@
+
 /*Manipulando o conteúdo do site*/
 #conteudo_principal{
     display: flex;
@@ -10,6 +11,7 @@
     margin: 50px;
     display: grid;
     column-gap: 100px;
+    row-gap: 100px;
     grid-template-columns: repeat(3,1fr);
 
 }
@@ -19,12 +21,10 @@
     max-width: 250px;
 }   
 .title{
-    color: white;
+    color: white
 }
 
-.img{
-    border-radius: 25px;
-}
+
 
 @media(max-width:1900px){
     #noticias{

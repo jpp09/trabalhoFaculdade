@@ -12,7 +12,9 @@ function cadastro(ev){
     if (senha.value == confirma_senha.value){
         pessoa_cadastrada = {
             'nome' : nome.value,
-            'usuário' : user.value
+            'usuario' : user.value,
+            'email' : email.value,
+            'senha': senha.value
         }
         fetch(url,{
             method : 'post',

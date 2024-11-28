@@ -3,7 +3,7 @@ const url_teste = 'http://127.0.0.1:5000/home'
 const tamanho = window.outerWidth
 console.log(tamanho)
 
-const pegarConteudo = fetch(url_teste,{
+const pegarConteudo = fetch(url,{
   headers: {
     'Content-Type': 'application/json',
   },

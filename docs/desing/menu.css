@@ -57,21 +57,24 @@ body{
 }
 
 /*Configurando a responsividade do menu para celular*/
-@media (max-width: 425px){
+@media (max-width: 500px){
     /*Ajustando o tamanho da logo*/
     #img_logo{
-        width: 75px;
-        height: 75px;
+        width: 100px;
+        height: 100px;
     }
 
-    /*Sumindo com o display de pesquisa*/
+    #img_drop{
+        width: 100px;
+        height: 100px;
+    }
 
     /*Arruamando a quantidade de colunas no grid area*/
     #conteudo_menu{
         display: grid;
         grid-template-columns: 1fr 5fr 1fr;
         grid-template-areas: 
-        "img_logo seção_de_acesso";
+        "img_logo dropdown_seções";
         align-items: center;
         justify-items: end;
         
@@ -88,29 +91,22 @@ body{
     
     #seção_de_acesso{
         display: none;
-        grid-area: botao;
-        display: flex;
-        grid-area: seção_de_acesso;
-        gap: 1rem;
-
     }
     
     #seção_de_rotas{
         display: none;
     }
 
+    #dropdown_seções{
+        grid-area: dropdown_seções;
+    }
+
 }
 
-@media (min-width: 425px){
-    #paginas{
+@media (min-width: 500px){
+    #dropdown_seções{
         display: none;
     }
-}
 
-@media (max-width: 425px){
-    #paginas{
-        display: flex;
-        gap: 1rem;
-        margin: 20px
-    }
+
 }

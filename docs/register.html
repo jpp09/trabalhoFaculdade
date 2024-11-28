@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="desing/register.css">
     <link rel="stylesheet" href="desing/menu.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body style="background-color: rgb(0,0,0,0.63)">
     <!--Menu da página de login-->
@@ -17,43 +18,47 @@
                 <a href="index.html"><img src="desing/EC__2_-removebg-preview.png" alt="EC com fundo preto e letras em vermelho" id="img_logo"></a>
             </div>
             <div id="seção_de_rotas">
-                <div id="pesquisa">
-                    <input type="text" id="search" >
-                </div>
                 <div id="seções">
                     <a href="comunidade.html" id="comunidade">Comunidade</a>
+                    <a href="index.html">Home</a>
                 </div>
             </div>
             <div id="seção_de_acesso">
                 <a href="login.html" id="login">Entrar</a>
                 <a href="register.html" id="register">Cadastrar</a>
             </div>
+                    <!--Menu para celulares-->
+        <div id="dropdown_seções">
+            <div class="dropdown">
+                <a class="btn btn-dark dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false">
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="login.html">Login</a></li>
+                  <li><a class="dropdown-item" href="register.html">Cadastro</a></li>
+                  <li><a class="dropdown-item" href="comunidade.html">Comunidade</a></li>
+                </ul>
+              </div>
+        </div>
         </div>
     </header>
     <section id="conteudo_principal_registro">
-        <!--Menu para celulares-->
-        <div id="paginas">
-            <a href="comunidade.html" id="comunidade_paginas">Comunidade</a>
-        </div>
         <!--Formulário para cadastro de usuários-->
-        <div id="id_section_register">
-            <FIeldset id="form_section_register">
+        <div id="id_section_register" class="card">
                 <form id="cadastro_form">
-                    <div id="content_register">
-                        <label for="user_name">Usuário:</label>
-                        <input type="text" id="user_name" name="user_name" placeholder="Digite o seu usuário" required><br>
-                        <label for="name">Nome:</label>
-                        <input type="text" id="name" name="name" placeholder="Digite o seu nome" required><br>
-                        <label for="email">E-mail:</label>
-                        <input type="email" id="email" name="email" placeholder="Digite o seu e-mail" required><br>        
-                        <label for="password">Senha:</label>
-                        <input type="password" id="password" name="password" placeholder="Digite a sua senha" required> <br>
-                        <label for="confirm_password">Confirme a senha:</label>
-                        <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirme a sua senha" required>
-                        <button type="submit">Cadastrar</button>
+                    <div id="register_form">
+                        <label for="user_name" class="form-label fw-bold">Usuário:</label>
+                        <input type="text" id="user_name" name="user_name" placeholder="Digite o seu usuário" required class="form-control"><br>
+                        <label for="name" class="form-label fw-bold">Nome:</label>
+                        <input type="text" id="name" name="name" placeholder="Digite o seu nome" required class="form-control"><br>
+                        <label for="email" class="form-label fw-bold">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="Digite o seu e-mail" required class="form-control"><br>        
+                        <label for="password" class="form-label fw-bold">Senha:</label>
+                        <input type="password" id="password" name="password" placeholder="Digite a sua senha" required class="form-control"> <br>
+                        <label for="confirm_password" class="form-label fw-bold" class="form-label">Confirme a senha:</label>
+                        <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirme a sua senha" required class="form-control"><br>
+                        <button type="submit" class="btn btn-dark">Cadastrar</button>
                     </div>
                 </form>
-            </FIeldset>
         </div>
     </section>
 </body>

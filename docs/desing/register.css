@@ -1,19 +1,12 @@
-#form_section_register{
-    border-radius: 25px;
-    width: 250px;
-    height: 300px;
-    margin: 50px
-}
 
 #id_section_register{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 50px;
 }
 
 #content_register{
-    width: 250px;
-    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,4 +16,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#register_form{
+    margin: 50px;
 }

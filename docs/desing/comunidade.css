@@ -1,6 +1,5 @@
 #form_section_cm{
     align-items: center;
-    border-radius: 25px;
     width: 250px;
     height: 450px;
     margin: 50px;
@@ -19,19 +18,56 @@
 }
 
 #conteudo_principal_comunidade{
-    display: grid;
-    grid-template-areas: 'form coment'
-    
-    
+    display: flex;
+    flex-direction: column;
+    margin: 15px;  
 }
 
 #section_coment{
-    margin: 100px;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
     gap: 100px;
     grid-area: coment;
 
+}
+
+.text{
+    color: white;
+    text-align: center;
+}
+
+#firts_p{
+    grid-area: p1;
+}
+
+#second_p{
+    grid-area: p2;
+    
+}
+
+#teste{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+@media (max-width: 1200px ){
+    #section_coment{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 100px;
+        grid-area: coment;
+    
+    }
+}
+
+@media (max-width:800px){
+    #section_coment{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-area: coment;
+    
+    }
 }
 
 @media(max-width:425px){
@@ -39,6 +75,6 @@
         width: 250px; 
         height: 150px;
     }
-    
+
 }
 

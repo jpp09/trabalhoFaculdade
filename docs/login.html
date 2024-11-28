@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="desing/menu.css">
     <script src="./funcionalidade/login.js" defer></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body style="background-color: rgb(0,0,0,0.63)">
     <!-- =Menu da página-->
@@ -17,40 +18,45 @@
                 <a href="index.html"><img src="desing/EC__2_-removebg-preview.png" alt="EC com fundo preto e letras em vermelho" id="img_logo"></a>
             </div>
             <div id="seção_de_rotas">
-                <div id="pesquisa">
-                    <input type="text" id="search" >
-                </div>
                 <div id="seções">
                     <a href="comunidade.html" id="comunidade">Comunidade</a>
+                    <a href="index.html">Home</a>
                 </div>
             </div>
             <div id="seção_de_acesso">
                 <a href="login.html" id="login">Entrar</a>
                 <a href="register.html" id="register">Cadastrar</a>
             </div>
+                <!--Menu para celulares-->
+            <div id="dropdown_seções">
+                <div class="dropdown">
+                    <a class="btn btn-dark dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false">
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="login.html">Login</a></li>
+                      <li><a class="dropdown-item" href="register.html">Cadastro</a></li>
+                      <li><a class="dropdown-item" href="comunidade.html">Comunidade</a></li>
+                    </ul>
+                  </div>
+            </div>
         </div>
     </header>
     <!-- Conteudo principal da página de login-->
     <section id="conteudo_principal_login">
-        <!--Menu para celulares-->
-        <div id="paginas">
-            <a href="comunidade.html" id="comunidade_paginas">Comunidade</a>
-        </div>
         <!--Formulário para realizar login-->
-        <form id="form_login" >
-            <div id="div_section_login">
-                <fieldset id="form_section_login">
-                    <div id="content_login">
-                        <label for="input_usuario">Usuário:</label>
-                        <br/>
-                        <input placeholder="Digite o seu usuário..." id="input_usuario"type='text' name="input_usuario"><br><br>
-                        <label for="input_senha">Senha:</label><br>
-                        <input id="input_senha" type= "password" name="input_senha" placeholder="Digite sua senha..." required><br><br>
-                        <button type="submit">Login</button>
-                    </div>
-                </fieldset>
-            </div>
-        </form>
+        <div id='section_login'class="card">
+            <form id="form_login" >
+                <div id="div_section_login">
+                        <div id="content_login">
+                            <label for="input_usuario" class="form-label fw-bold">Usuário:</label>
+                            <input placeholder="Digite o seu usuário..." id="input_usuario"type='text' name="input_usuario" class="form-control"><br><br>
+                            <label for="input_senha" class="form-label fw-bold">Senha:</label><br>
+                            <input id="input_senha" type= "password" name="input_senha" placeholder="Digite sua senha..." required class="form-control"><br><br>
+                            <button type="submit" class="btn btn-dark">Login</button>
+                        </div>
+                </div>
+            </form>
+        </div>
     </section>
 
 

@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="desing/menu.css">
     <script src="./funcionalidade/add.js" defer></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./funcionalidade/conteudo.js" defer></script>
 </head>
 <body style="background-color: rgb(0,0,0,0.63)">
     <!--Remover essa página adicionar um parte para adicionar um comentário em cada aba-->
@@ -18,66 +20,95 @@
                 <a href="index.html"><img src="desing/EC__2_-removebg-preview.png" alt="EC com fundo preto e letras em vermelho" id="img_logo"></a>
             </div>
             <div id="seção_de_rotas">
-                <div id="pesquisa">
-                    <input type="text" id="search" >
-                </div>
                 <div id="seções">
-                    <a href="filmes.html" id="filmes">Filmes</a>
-                    <a href="series.html" id="series">Séries</a>
-                    <a href="anime.html" id="anime">Animes</a>
-                    <a href="comunidade.html" id="comunidade">Comunidade</a>
+                    <a href="index.html" id="comunidade">Home</a>
                 </div>
             </div>
             <div id="seção_de_acesso">
                 <a href="login.html" id="login">Entrar</a>
                 <a href="register.html" id="register">Cadastrar</a>
             </div>
+            <!--Menu para celular-->
+            <div id="dropdown_seções">
+                <div class="dropdown">
+                    <a class="btn btn-dark dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false" href="#section_coment">
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="login.html">Login</a></li>
+                        <li><a class="dropdown-item" href="register.html">Cadastro</a></li>
+                        <li><a class="dropdown-item" href="comunidade.html">Comunidade</a></li>
+                    </ul>
+                    </div>
+            </div>
         </div>
     </header>
     <!--Conteudo prinpal desssa página-->
     <section id="conteudo_principal_comunidade">
-        <!--Menu para celular-->
-        <div id="paginas">
-            <a href="filmes.html" id="filmes_paginas">Filmes</a>
-            <a href="series.html" id="series_paginas">Séries</a>
-            <a href="anime.html" id="anime_paginas">Animes</a>
-            <a href="comunidade.html" id="comunidade_paginas">Comunidade</a>
-        </div>
+        <!--Frase de efeito para a página-->
+        <p id='firts_p'class="badge text-bg-light text-wrap fs-6">Apaixone-se por novas histórias, compartilhe suas resenhas e explore os melhores filmes, séries e animes da semana — tudo em um só lugar para quem vive a magia da ficção!</p>
+        <p id="second_p" class="badge text-bg-light text-wrap fs-6">Descubra, compartilhe e celebre suas histórias favoritas — os melhores filmes, séries e animes estão aqui, toda semana!</p>
+        
         <!--Forms para registrar a comunidade-->
         <div id="form_div_cm">
-            <fieldset id="form_section_cm">
-                <form id="form_add">
-                    
-                    <label for="input_title" >Titulo:</label>
-                    <input type="text" name="input_title" id="input_title" placeholder="Digite o título do comentário"><br><br>
 
-                    <label for="filme">Nome do filme:</label>
-                    <input type="text" name="filme" id="nome_filme" placeholder="Digite o nome do título"> <br><br>
-
-                    <label>Spoiler:</label><br>
-                    <input type="radio" name="input_spoiler" id="input_yes" value="sim">
-                    <label for="input_yes">Sim</label>
-                    <input type="radio" name="input_spoiler" id="input_no" value="não">
-                    <label for="input_no">Não</label><br><br>
-
-
-                    <label for="categoria">Selecione a categoria: </label>
-                    <select name="categoria" id="categoria">
-                        <option value="filme">Filmes</option>
-                        <option value="serie">Série</option>
-                        <option value="anime">Anime</option>
-                    </select>
-                    <br><br>
-                    <label for="input_description">Descrição:</label><br>
-                    <textarea name="input_description" id="input_description" placeholder="Escreve a descrição do post" name="description"></textarea><br><br>
-                    <button type="submit" id="addPost">Enviar Post</button>
-                </form>
-            </fieldset>
-            <!--Colocar informações de filme abaixo do formulário-->
-        </div>
-        <!--Parte de colcoar comentários no site-->
-        <div id="section_coment">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Crie uma resenha
+              </button>
+            <!--Modal do fórmulário-->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Cadastre sua resenha:</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!--Fórmulário no corpo sobre o cadastro da resenha filme/série/anime-->
+                        <form id="form_add">
+                        
+                            <label for="input_title" >Titulo:</label>
+                            <input type="text" name="input_title" id="input_title" placeholder="Digite o título do comentário"><br><br>
         
+                            <label for="filme">Nome do filme:</label>
+                            <input type="text" name="filme" id="nome_filme" placeholder="Digite o nome do título"> <br><br>
+        
+                            <label>Spoiler:</label><br>
+                            <input type="radio" name="input_spoiler" id="input_yes" value="sim">
+                            <label for="input_yes">Sim</label>
+                            <input type="radio" name="input_spoiler" id="input_no" value="não">
+                            <label for="input_no">Não</label><br><br>
+        
+        
+                            <label for="categoria">Selecione a categoria: </label>
+                            <select name="categoria" id="categoria">
+                                <option value="filme">Filmes</option>
+                                <option value="serie">Série</option>
+                                <option value="anime">Anime</option>
+                            </select>
+                            <br><br>
+                            <label for="input_description">Descrição:</label><br>
+                            <textarea name="input_description" id="input_description" placeholder="Escreve a descrição do post" name="description"></textarea><br><br>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" id="addPost" class="btn btn-primary" data-bs-dismiss="modal">Enviar Post</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Parte do conteúdo da página-->
+        <div id="teste">
+            <div id="conteudo_visual">
+                <h3>Conteúdo:</h3><br>
+                </div>
+            </div>
+            <!--Comentários-->
+            <h3>Resenhas:</h3><br>
+            <div id="section_coment">
+                
+            </div>
         </div>
     </section>
 

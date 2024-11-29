@@ -45,7 +45,10 @@ function deslogar(){
     'Content-Type': 'application/json',
   }})
   .then(res => res.json())
-  .then(j=> alert(j.mensagem))
+  .then(j=> {
+    alert(j.mensagem)
+    location.reload()
+  })
 }
 
-location.reload()
+

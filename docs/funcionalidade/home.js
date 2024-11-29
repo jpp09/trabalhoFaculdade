@@ -1,7 +1,5 @@
 const url = 'https://trabalhofaculdadebackend.onrender.com/home'
-const url_teste = 'http://127.0.0.1:5000/home'
-const tamanho = window.outerWidth
-console.log(tamanho)
+
 
 const pegarConteudo = fetch(url,{
   headers: {
@@ -29,4 +27,6 @@ function criar(ov,img){
     div_externa.append(image,div_body)
     pegarID.append(div_externa)
 }
+
+
 

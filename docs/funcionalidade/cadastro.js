@@ -1,6 +1,6 @@
 const form = document.getElementById('cadastro_form')
 form.addEventListener('submit',cadastro)
-const url = 'http://127.0.0.1:5000/cadastro'
+const url = 'https://trabalhofaculdadebackend.onrender.com/cadastro'
 function cadastro(ev){
     ev.preventDefault()
     const user = document.getElementById('user_name')
@@ -32,5 +32,5 @@ function cadastro(ev){
     }else{
         alert('As senhas não conferem. Por favor digie novamente')
     }
-
+    location.href = 'https://jpp09.github.io/trabalhoFaculdade/index.html'
 }

@@ -9,7 +9,7 @@
     <script src="./funcionalidade/add.js" defer></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="./funcionalidade/conteudo.js" defer></script>
+    <script src="./funcionalidade/verificar_log_in.js" defer></script>
 </head>
 <body style="background-color: rgb(0,0,0,0.63)">
     <!--Remover essa página adicionar um parte para adicionar um comentário em cada aba-->
@@ -25,8 +25,9 @@
                 </div>
             </div>
             <div id="seção_de_acesso">
-                <a href="login.html" id="login">Entrar</a>
-                <a href="register.html" id="register">Cadastrar</a>
+                <a href="login.html" id="login" class="fw-bolder">Entrar</a>
+                <a href="register.html" id="register" class="fw-bolder">Cadastrar</a>
+                <a href="#" id="deslogar" display = 'none' class="fw-bolder">Logout</a>
             </div>
             <!--Menu para celular-->
             <div id="dropdown_seções">
@@ -34,9 +35,10 @@
                     <a class="btn btn-dark dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false" href="#section_coment">
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="login.html">Login</a></li>
-                        <li><a class="dropdown-item" href="register.html">Cadastro</a></li>
-                        <li><a class="dropdown-item" href="comunidade.html">Comunidade</a></li>
+                        <li><a class="dropdown-item" href="index.html" id="home_drop">Home</a></li>
+                        <li><a class="dropdown-item" href="login.html" id="login_drop">Login</a></li>
+                        <li><a class="dropdown-item" href="register.html" id="register_drop">Cadastro</a></li>
+                        <li><a href="#" id="deslogar_drop" class="dropdown-item">Logout</a></li>
                     </ul>
                     </div>
             </div>
@@ -51,7 +53,7 @@
         <!--Forms para registrar a comunidade-->
         <div id="form_div_cm">
 
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="criar_resenha">
                 Crie uma resenha
               </button>
             <!--Modal do fórmulário-->
@@ -97,15 +99,8 @@
                 </div>
             </div>
         </div>
-
-        <!--Parte do conteúdo da página-->
-        <div id="teste">
-            <div id="conteudo_visual">
-                <h3>Conteúdo:</h3><br>
-                </div>
-            </div>
-            <!--Comentários-->
-            <h3>Resenhas:</h3><br>
+         <!--Comentários-->
+            <h3 class="fw-bolder">Resenhas</h3><br>
             <div id="section_coment">
                 
             </div>

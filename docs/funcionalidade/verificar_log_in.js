@@ -1,15 +1,50 @@
-const btn = document.getElementById('pegar btn do formulário')
-const secao_acesso = document.getElementById('pegar seção de acesso')
-const btn_logout = document.getElementById('Pegar botão de logout')
-fetch(url,{headers: {}})
+const url_log = 'https://trabalhofaculdadebackend.onrender.com/sessao'
+const url_deslogar = 'https://trabalhofaculdadebackend.onrender.com/deslogar'
+const btn = document.getElementById('criar_resenha')
+const login = document.getElementById('login')
+const registro = document.getElementById('register')
+const logout = document.getElementById('deslogar')
+const logout_drop = document.getElementById('deslogar_drop')
+const login_drop = document.getElementById('login_drop')
+const registro_drop = document.getElementById('register_drop')
+
+fetch(url_log,{headers:{
+    'Content-Type': 'application/json',
+  }})
 .then(res => res.json())
-.then(j => check_login(j.log))
+.then(j => check_login(j))
+
 
 function check_login(log){
-if(j.log != None){
-btn.style.disabled = 'false'
-secao_acesso.style.display = 'none'
-btn_logout.style.display = 'block'} else{btn.style.disabled = 'True'
-secao_acesso.style.display = 'block'
-btn_logout.style.display = ''none")}
+  if(log != ''){
+    try{
+      btn.disabled = false
+    } catch(erro){
+      console.log(erro)
+    }
+    logout.style.display = 'block'
+    login.style.display = 'none'
+    registro.style.display = 'none'
+}
+    else{ 
+      try{
+        btn.disabled = true
+      } catch(erro){
+        console.log(erro)
+      }
+      logout.style.display = 'none'
+      logout_drop.display = 'none'
+    }
+
+  }
+
+logout.addEventListener('click',  deslogar)
+
+function deslogar(){
+  fetch(url_deslogar,{headers:{
+    'Content-Type': 'application/json',
+  }})
+  .then(res => res.json())
+  .then(j=> alert(j.mensagem))
+  location.reload()
 }

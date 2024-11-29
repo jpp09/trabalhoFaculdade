@@ -1,8 +1,8 @@
 const form = document.getElementById('form_login')
-form.addEventListener('submit',login)
-url = 'http://127.0.0.1:5000/login'
+form.addEventListener('submit',login_fc)
+url = 'https://trabalhofaculdadebackend.onrender.com/login'
 
-function login(ev){
+function login_fc(ev){
   ev.preventDefault()
   const usuario = document.getElementById('input_usuario')
   const senha = document.getElementById('input_senha')
@@ -16,5 +16,7 @@ function login(ev){
     body : JSON.stringify(login_user)
   })
   .then(res => res.json())
-  .then(j => console.log(j.mensagem))
+  .then(j => {alert(j.mensagem) 
+    location.href = `${j.link}`})
+
 }

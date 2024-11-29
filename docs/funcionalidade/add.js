@@ -40,10 +40,9 @@ function criar_post(titulo_post,titulo_filme,descricao, spoiler, categoria){
     comentario.innerText =  `Comentário: ${descricao}`
     sp.innerText = `O conteúdo contem spoiler: ${spoiler}`
     sp.className = 'card-text'
-    comentario.className = 'card-text'
+    comentario.className = 'card-text text-capitalize'
     div.append(h3_titulo_conteudo,h4_titulo_filme,categ,sp,comentario)
     div_card.append(div)
     section.append(div_card)
 }
-
 

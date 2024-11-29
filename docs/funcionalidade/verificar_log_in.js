@@ -39,7 +39,7 @@ function check_login(log){
   }
 
 logout.addEventListener('click',  deslogar)
-logout_drop.addEventeListener('click',deslogar)
+logout_drop.addEventListener('click',deslogar)
 
 function deslogar(){
   fetch(url_deslogar,{headers:{

@@ -29,8 +29,9 @@ function cadastro(ev){
         nome.value = ''
         email.value = ''
         confirma_senha.value = ''
+        location.href = 'https://jpp09.github.io/trabalhoFaculdade/login.html'
     }else{
         alert('As senhas não conferem. Por favor digie novamente')
     }
-    location.href = 'https://jpp09.github.io/trabalhoFaculdade/index.html'
+    
 }

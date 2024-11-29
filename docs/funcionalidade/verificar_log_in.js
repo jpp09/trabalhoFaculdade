@@ -47,7 +47,6 @@ function deslogar(){
   .then(res => res.json())
   .then(j=> {
     alert(j.mensagem)
-    location.reload()
   })
 }
 

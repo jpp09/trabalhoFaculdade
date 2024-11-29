@@ -10,7 +10,6 @@ Apaixone-se por novas histórias, compartilhe suas resenhas e explore os melhore
   <li>João Pedro de O. Martins.</li>
   <li>Agnaldo Machado da Silva</li>
   <li>Kauã Lenon Barros dos Santos</li>
-  <li>Eduardo portes de almeida</li>
   <li>Fabricio dos Santos</li>
 <ol>
 
